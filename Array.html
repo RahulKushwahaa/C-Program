@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <hr />
+    <ul>
+        <li><a href="index.html" style="font-size: x-large">Home page</a></li>
+        <li><a href="C Program.html" style="font-size: large;">C Program</a></li>
+        <li><a href="Function.html" style="font-size:large;">Function</a></li>
+    </ul>
+        <hr />
+    <h1><i><u style="color:yellow;background-color:black">ARRAY :-</u></i></h1>
+    Array is a linear data structure, data can store multiple value at a time.
+    <br/>In C array is a variable that can store multiple value at a time.
+    <h2><u style="color:yellow;background-color:black">Array Declaration :-</u></h2>
+    <b style="color:bisque;background-color:black">syntax :-</b><br/>
+    <b style="color:red">dataType arrayName[size];</b><br/>
+    <i style="color:red">dataType -></i> any valid C dataType<br/>
+    <i style="color:red">arrayName -></i> any valid C identifier<br/>
+    <i style="color:red">size -></i> Any non zero positive integer literal.
+    </p>
+    <b>Ex :-</b><br/>
+    <b style="color:blueviolet">int number[10];</b> //here numbers is an integer type array, it can store 10 different integer numbers at a time.<br/>
+    <b style="color:blueviolet">float marks[20];</b> //here marks is a float array,it can store 20 different float numbers at a time.<br/>
+    <b style="color:blueviolet">int n[100];</b> //here n is an integer array of capacity 100. That means it can store 100 different integer numbers at a time.
+    </p>
+    <h3> <u style="color:yellow;background-color: black;">How much memory is a allocated for an array ? :-</u></h3>
+    <b style="color:red">Total memory size allocated by an array = size of arrayType * size of array</b>
+    <br/><b>Ex :-</b><br/>
+    <i style="color:red">int x[20];</i> //here: x is an array of capacity 20 of integer type. Memory size allocated for x=size of int * size of array. 4 bytes*20 = 80 Bytes.<br/>
+    <i style="color:red">char c[50];</i> //here: c is an array of capacity 50 of char type. Memory size allocated for c=size of char * size of array. 1 bytes*50 = 50 bytes.
+    </p>
+    For an array always contigeous memory is allocated.<br/>
+    In an array every item is known as <b>ELEMENT</b>. Every element is identified by a number known as <b>IndexNumber</b>. 
+    </p>
+    <b>Ex :-</b><br/>
+    <b style="color:blueviolet">int arr[5];</b><br/>
+    for arr, memory will be allocated as:<br/>
+    Name:arrsize:20bytes
+    In C array index always begins from 0(zero).
+    <h2><u style="color:yellow;background-color: black;">Accessing element of an array :-</u></h2>
+    <b style="color:bisque;background-color:black">syntax :-</b><br/>
+    <b style="color:red">arrayName[indexNumber];</b><br/>
+    Index number must be within <b>LOWER BOND (0)</b> and <b>UPPER BOND (arraySize-1)</b>.<br/>
+    arraySize=10<br/> =10-1 => 9<br/>
+    <b style="color:blueviolet">Note :-</b>We can use only one element of array at a time.
+    <h2><u style="color:yellow;background-color: black;">Traversal of an array :-</u></h2>
+    The process of accessing every element of an array once.<br/>
+    To traverse an array a loop is used. Generally <b>'for'</b> loop is used to traverse the array because the size of an array is fixed and the loop counter is used as index number of array as:
+    <br/><b style="color:red">for( i=0 ; i  &lt sizeOfArray ; i+=1)<br/>{<br/>  process ith element of array;<br/>}</b><br/>
+    Forward traversal - from begning to end of array.<br/>
+    Backward traversal - from end to begning of array.<br/>
+    <b>backward Traversal :-</b><br/>
+    <b style="color:red">for( i=sizeOfArray-1 ; i  &gt;=0 ; i-=1)<br/>{<br/>process ith element of array<br/>}</b>
+    <h2><b style="color:yellow;background-color: black;">Swapping :-</b></h2>
+    Process of exchanging value of two variable.
+    <h3><b style="color:yellow;background-color: black;">Swapping using third container:-</b></h3>
+    <b style="color:red">int x,y,z;<br/>x=10;<br/>y=20;</b><br/>
+    <b>swap x and y</b>
+    <ol>
+        <li>Put the value of any variable in temprory variable.</li>
+        <b style="color:red">z=x;</b>
+        <li>Now put the value of another variable in variable which value is stored in temprory variable.</li>
+        <b style="color:red">x=y;</b>
+        <li>Now put the value of temprory variable in another variable.</li>
+        <b style="color:red">y=z;</b>
+    </ol>
+    <b style="color:red">z=x;<br/>x=y;<br/>y=z;</b>
+    <br/>can swap any types of variables.
+    <h3><b style="color:yellow;background-color: black;">Swapping of integer variable. (Without using third variable concept) :-</b></h3>
+    <b style="color:red">int a,b;<br/> a=10;<br/>b=20;</b><br/>
+    <b>swap a and b </b>
+    <ol>
+        <li>Add value of a and b and put sum in a.<br/> a=a+b; a will be 10+20=30 (new a=30 and b=20)</li>
+        <li>Subtract value of b from a and put result in b.<br/> b=a-b; b will be 30-20=10 (new a=30 and b=10)</li>
+        <li>again subtract value of b from a and put value in a.<br/>a=a-b; a will be 30-10=20 (now a=20 and b=10)</li>
+    </ol>
+    <b style="color:red">a=a+b;<br/>b=a-b;<br/>a=a-b;</b>
+    <br/>will be valid only if sum of both variable is not more than the range of variable.
+
+    </body>
+</html>
