@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Function</title>
+</head>
+
+<body>
+    <hr />
+    <ul>
+        <li><a href="index.html" style="font-size: x-large">Home page</a></li>
+        <li><a href="C Program.html" style="font-size: large;">C Program</a></li>
+    </ul>
+    <hr />
+    <h1><u style="color:greenyellow;background-color:black">Function/Procedure/Sub-routine/Method :-</u></h1>
+    It is a code block written for specific task. And called whenever required. Every function has unique name by which
+    function/code block is called.
+    <p>Some function takes some value to work, it is known as <u style="color:red">argument</u>.<br />Some function
+        return value after performing operation, it is known as <u style="color:red">return value</u>.</p>
+    <h2><u style="color:greenyellow;background-color:black">There are two types of function according to defination
+            :-</u></h2>
+    <ol>
+        <li>Function declaration (Only once)</li>
+        <li>Function defination (Only once) (Not in predefined function)</li>
+        <li>Function calling (Infinite times)</li>
+    </ol>
+    <hr />
+    <ol>
+        <li><b><u>Function declaration :-</u></b></li>
+        </p>
+        <u style="color:aliceblue;background-color:black">Syntax :-</u><br />
+        <b style="color:red">returnType functionName(argument1Type,argument2Type,argumentNType);</b><br />
+        <b style="color:red">returnType</b> :- Any valid C data type<br />
+        <b style="color:red">argument1Type,argument2Type</b> :- Any valid C data type<br />
+        <b style="color:red">functionName</b> :- Any valid C identifier
+        </p>ex :-<br />
+        <b style="color:red">int sum(int,int);</b><br />
+        It declares 'sum' is a function that will accept two integer number and after performing operation it will
+        return an integer number.
+        </p>
+        <b style="color:red">float kush(int,float,float);</b><br />
+        It declares 'kush' is a function that will accept one integer and two float number and after performing
+        operation it will return a float number.
+        <p><b style="color:fuchsia">Note :-</b> A function can accept many arguments but can return only one value.</p>
+        <li><b><u>Function defination :-</u></b></li>
+        </p>
+        <u style="color:aliceblue;background-color:black">Syntax :-</u><br />
+        <b style="color:red">returnType functionName(argumentType varName,argumentType varName)</b>
+        <-Function Header<br />
+        <b style="color:red">{ <br /> //Local variable declaration <br /> statement(s); <br /> return valueTobeReturn;
+            <br /> }</b>
+        <-All are Function body </p>ex :-<br />
+            Creating a function that will accept two integer number and return the sum of both numbers the sum of two
+            integer number will be an integer number so, that return type of function will be int.
+            <p style="color:red">//declaration <br /> int sum(int,int);</p>
+            <p style="color:red">//defination <br /> int sum(int a,int b) <br /> { <br /> int c; <br /> c=c+b; <br />
+                return c; <br /> } </p>
+            <li><b><u>Function call :-</u></b></li>
+            </p>
+            <u style="color:aliceblue;background-color:black">Syntax :-</u><br />
+            It function return value and want so store returned value:<br />
+            <b style="color:red">varName = functionName(argumentList);</b>
+            </p>
+            If function dosn't return value:<br />
+            <b style="color:red">functionName(argumentList);</b>
+
+    </ol>
+    <b>Example :-</b><br/>
+    <i style="color:aliceblue;background-color:indianred">/* C program to add two numbers using user defined function */.</i>
+    <br/>#include"stdio.h"<br/>
+    <i style="color:aliceblue;background-color:indianred">//Create function to add two integer number <br/> //1. function declaration</i><br/>
+    int sum(int a,int b);<br/>
+    {
+        <br/> int c;
+        <br/> c=a+b;
+        <br/> return c; <br/>
+    }<br/>
+    int main( )<br/>
+    {
+        <br/> int a,b,c;
+        <br/> printf("Enter 1st number:"); <i style="color:aliceblue;background-color: indianred;"> //function call</i>
+        <br/> scanf("%d",&a); <i style="color:aliceblue;background-color: indianred;"> //function call</i>
+        <br/> printf("Enter 2nd number:");
+        <br/> scanf("%d",&b);
+        <br/> c=sum(a,b); <i style="color:aliceblue;background-color:indianred"> function call</i>
+        <br/> printf("\n sum=%d",c);
+        <br/> return 0; <br/>
+
+    }
+
+
+</body>
+
+</html>
